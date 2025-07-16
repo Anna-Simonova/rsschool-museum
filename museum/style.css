@@ -70,7 +70,7 @@ html {
     transition: color 0.5s;
 }
 
-.container-section {
+.container-section-welcome {
     display: flex;
     flex-wrap: wrap;
     padding: 0 240px;
@@ -82,6 +82,8 @@ h1 {
     font-size: 80px;
     text-transform: uppercase;
     font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 auto 25px 0;
 }
 
 .img {
@@ -99,12 +101,15 @@ h1 {
 }
 
 .section-title {
+    font-family: 'Roboto', serif;
     font-size: 28px;
     font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 auto 75px 0;
 }
 
-.button {
-    font-family: "Roboto", serif;
+.button-welcome {
+    font-family: 'Roboto', serif;
     font-size: 22px;
     font-weight: 300;
     color: #fff;
@@ -114,6 +119,7 @@ h1 {
     width: 360px;
     height: 75px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
 .pagination {
@@ -162,7 +168,7 @@ h1 {
     fill: white;
 }
 
-.button:hover {
+.button-welcome:hover {
     background: #9d8665;
     cursor: pointer;
 }
@@ -184,4 +190,78 @@ h1 {
 .arrow:hover {
     cursor: pointer;
     fill: #9d8665;
+}
+
+.container-section-visiting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 240px;
+    width: 1920px;
+    height: 1266px;
+    background: #ffffff;
+}
+
+.container-visiting {
+    width: 1440px;
+    height: 1116px;
+}
+
+h2 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #9D8665;
+    margin: 0 auto 25px 0;
+    letter-spacing: 5px;
+}
+
+.line {
+    background: #710707;
+    border: #710707;
+    width: 1440px;
+    height: 3px;
+    margin-bottom: 75px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-block {
+    width: 440px;
+    height: 424px;
+    margin-bottom: 75px;
+}
+
+.line-visiting {
+    background: #710707;
+    border: #710707;
+    width: 300px;
+    height: 2px;
+    margin: 0 140px 10px 0;
+}
+
+.img-title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 25px auto 10px 0;
+    letter-spacing: 5px;
+}
+
+.tour {
+    font-family: 'Roboto', serif;
+    font-size: 22px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.panorama {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 10px;
 }
