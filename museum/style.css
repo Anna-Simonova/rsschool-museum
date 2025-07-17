@@ -239,10 +239,18 @@ h2 {
 
 .line-visiting {
     background: #710707;
-    border: #710707;
+    border: #710707 solid 1px;
     width: 300px;
     height: 2px;
     margin: 0 140px 10px 0;
+    transition: width 1s;
+}
+
+.img-block:hover {
+    cursor: pointer;
+    .line-visiting{
+        width: 440px;
+    }
 }
 
 .img-title {
@@ -421,6 +429,84 @@ span {
     fill: black;
 }
 
+.container-section-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 240px;
+    width: 1920px;
+    height: 2200px;
+    background: #000000;
+}
+
+.content-gallery {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 2125px;
+}
+
+.gallery-title {
+    height: 90px;
+}
+
+.section-gallery {
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-box::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    transform-origin: center;
+}
+
+.parallax {
+    width: 1440px;
+    margin-top: 75px;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.back {
+    width: 1440px;
+    height: 360px;
+    margin-top: 1765px;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+
+.parallax::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    margin-top: 50px;
+}
+
+.img-bottom {
+    margin-top: 24px;
+}
+
 .footer-container{
     display: flex;
     flex-wrap: wrap;
@@ -476,7 +562,7 @@ span {
 
 .messenger-logo {
     fill: white;
-    transition: color 0.5s;
+    transition: fill 0.5s;
 }
 
 .line-footer {
@@ -497,9 +583,11 @@ span {
 
 }
 
-.messenger-logo:hover {
+.messenger-link:hover {
     cursor: pointer;
-    fill: #D2B183;
+    .messenger-logo {
+        fill: #D2B183;
+    }
 }
 
 .fnav-link:hover {
