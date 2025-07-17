@@ -61,6 +61,7 @@ html {
 }
 
 .nav-link {
+    font-family: "Roboto", serif;
     margin-left: 55px;
     line-height: 50px;
     text-decoration: none;
@@ -264,4 +265,120 @@ h2 {
     font-size: 18px;
     font-weight: 200;
     margin-top: 10px;
+}
+
+.container-section-explore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 240px;
+    width: 1920px;
+    height: 865px;
+}
+
+.content-explre {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    height: 715px;
+}
+
+.container-explre {
+    width: 660px;
+}
+
+.img-explre {
+    margin: 14px 0 0 60px;
+}
+
+.before {
+    margin: 14px 0 0 60px;
+    width: 440px;
+    height: 700px;
+    background-image: url("https://github.com/rolling-scopes-school/stage1-tasks/blob/museum/assets/img/explore-slider/before.jpg?raw=true");
+}
+
+.after {
+    margin: 14px 0 0 60px;
+    width: 720px;
+    height: 700px;
+    background-image: url("https://github.com/rolling-scopes-school/stage1-tasks/blob/museum/assets/img/explore-slider/after.jpg?raw=true");
+}
+
+.explre {
+    color: white;
+}
+
+.line-explre {
+    background: #710707;
+    border: #710707;
+    width: 660px;
+    height: 3px;
+    margin-bottom: 75px;
+}
+
+.text {
+    font-family: 'Roboto', serif;
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    line-height: 38.5px;
+    margin-bottom: 25px;
+}
+
+span {
+    color: #D2B183;
+}
+
+.img-line {
+    margin: 0 0 0 420.5px;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #710707;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin: 0 240px;
+}
+
+.fnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 363px;
+    height: 128px;
+    border: white 2px solid;
+}
+
+.fnav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.fnav-link {
+    font-family: "Roboto", serif;
+    margin-bottom: 25px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 22px;
+    transition: color 0.5s;
+}
+
+.fnav-link:hover {
+    color: #9d8665;
 }
