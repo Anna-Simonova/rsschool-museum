@@ -424,6 +424,7 @@ span {
 .footer-container{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     max-width: 1920px;
     margin: 0 auto;
     background: black;
@@ -443,6 +444,7 @@ span {
     justify-content: space-between;
     width: 363px;
     height: 128px;
+    margin: 87px 397px 50px 145px;
 }
 
 .fnav-list {
@@ -462,6 +464,42 @@ span {
     font-weight: 200;
     font-size: 22px;
     transition: color 0.5s;
+}
+
+.messenger {
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    height: 48px;
+    margin-top: 162px;
+}
+
+.messenger-logo {
+    fill: white;
+    transition: color 0.5s;
+}
+
+.line-footer {
+    width: 1920px;
+    height: 3px;
+    margin: 0;
+}
+
+.footer-rs {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    margin: 50px 240px 0 240px;
+    font-family: 'Roboto', serif;
+    font-size: 22px;
+    font-weight: 200;
+    color: white;
+
+}
+
+.messenger-logo:hover {
+    cursor: pointer;
+    fill: #D2B183;
 }
 
 .fnav-link:hover {
