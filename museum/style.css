@@ -114,11 +114,12 @@ h1 {
     font-size: 22px;
     font-weight: 300;
     color: #fff;
+    text-decoration: none;
     background: #710707;
     border: none;
+    padding: 26.5px 65px;
     border-radius: 10px;
-    width: 360px;
-    height: 75px;
+    width: 232px;
     text-align: center;
     letter-spacing: 2px;
     transition: background 0.5s;
